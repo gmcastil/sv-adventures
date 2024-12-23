@@ -1,0 +1,8 @@
+#!/bin/bash
+
+vsim \
+    -voptargs=+acc \
+    -work work \
+    -do 'log -r \*; run 400ns' \
+    work.top
+
